@@ -1,0 +1,189 @@
+Numbers that are the sum of 11 positive 7th powers.
+Coordination sequence T6 for Zeolite Code DDR.
+Coordination sequence T1 for Zeolite Code LOV.
+If a, b in sequence, so is ab+5.
+From table of maximal epacts e(p) and corresponding primes p, for x_1=2, x_{m+1} = (x_m)^2+1; sequence gives p.
+Numbers n such that continued fraction for sqrt(n) has period 42.
+Primes that remain prime through 2 iterations of function f(x) = 8x + 7.
+Convolution of Fibonacci numbers and (1, prime(1), prime(2), ...).
+a(n) = position of n^2 + (n+1)^2 + (n+2)^2 in A004432.
+
+Primes such that digits of p do not appear in p^2.
+Squares that are not the sum of 2 nonzero squares.
+Coordination sequence occurring in Zeolite Codes AFG, CAN, LIO, LOS.
+Coordination sequence T1 for Cordierite.
+Coordination sequence T1 for Zeolite Code ATO.
+Prefix (or Levenshtein) codes for natural numbers.
+a(n) = (2*n)^2.
+a(n) = (3n+2)^2.
+a(n) = (4n + 2)^2.
+a(n) = (5*n + 2)^2.
+a(n) = (6*n + 2)^2.
+
+
+(5n+1)(5n+4).
+Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite RUT = RUB-10 R4 [ B4Si32O72 ].
+Numbers n such that continued fraction for sqrt(n) has period 82.
+Convolution of A023532 and Fibonacci numbers.
+n written in fractional base 8/7.
+a(n) = Sum_{k=0..2n} (k+1) * A027052(n, k).
+Molien series for complete weight enumerator of self-dual code over GF(5).
+Numbers n such that continued fraction for sqrt(n) has even period and central term 86.
+Numbers whose set of base 9 digits is {1,4}.
+Concatenation of prime factors of n is a cube.
+
+
+
+Apply partial sum operator twice to Fibonacci numbers.
+Sum of 12 positive 9th powers.
+Coordination sequence T1 for Zeolite Code HEU.
+Period of continued fraction for sqrt(n) contains exactly three 1's.
+n*(9*n-2).
+Number of 2's in n-th term of A006711.
+a(n) = Sum_{k=m..n} T(k,n-k), where m = floor((n+1)/2); a(n) is the n-th diagonal-sum of left justified array T given by A027935.
+a(0)=1, a(n) = Fibonacci(2n+4) - (2n+3).
+n-th number in which the number of distinct base 7 digits is 5.
+a(n) = C(n+3,4) + 3*C(n+1,3) + 5*C(n-1,2) + 7*n - 15.
+
+
+Largest primitive factor of 2^(2n+1) + 1.
+[ n(n-1)(n-2)(n-3)/22 ].
+s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k), where k = [ (n+1)/2 ], s = A000201 (lower Wythoff sequence), t = A001950 (upper Wythoff sequence).
+s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1), where k = [ n/2 ], s = A000201 (lower Wythoff sequence), t = A001950 (upper Wythoff sequence).
+Period of continued fraction for sqrt(n) contains exactly 60 ones.
+Lower prime of a difference of 18 between consecutive primes.
+Multiplicity of highest weight (or singular) vectors associated with character chi_178 of Monster module.
+First prime from A031936 (lesser of 18-twin primes) whose distance to the next 18-twin increases.
+Primes p for which the period of reciprocal = (p-1)/6.
+Numbers n such that 50*R_n + 9 is prime, where R_n = 11...1 is the repunit (A002275) of length n.
+
+Number of positive integers <= 2^n of form x^2 + 3 y^2.
+2^n written in base 5.
+a(n) = Fibonacci(n) + n.
+Numbers of the form (p^2 - 49)/120 where p is prime.
+G.f.: 1/((1-x)*(1-x^2)*(1-x^3)^2*(1-x^4)*(1-x^5)).
+Duplicate of A000866
+Primes written in base 4.
+Number of meanders in which first bridge is 5.
+Primitive modest numbers.
+Number of symmetric polynomial functions of degree n of a symmetric matrix (of indefinitely large size) under joint row and column permutations. Also number of multigraphs with n edges (allowing loops) on an infinite set of nodes.
+
+
+
+-1 + number of partitions of n.
+a(n) = 3*(2*n)!/((n+2)!*(n-1)!).
+Pentagonal numbers: a(n) = n*(3*n-1)/2.
+Binomial coefficient binomial(n,4) = n*(n-1)*(n-2)*(n-3)/24.
+a(n) = 5*binomial(2n, n-2)/(n+3).
+Numbers written in base of triangular numbers.
+a(0)=1; a(n) = 10^n + 1, n >= 1.
+Number of numbers == 0 (mod 3) in range 2^n to 2^(n+1) with odd number of 1's in binary expansion.
+Strobogrammatic numbers: the same upside down.
+a(n) = n^3 + 1.
+
+
+
+Number of positive integers <= 2^n of form x^2 + 16y^2.
+Numbers that are the sum of 2 squares in exactly 3 ways.
+4!(2n-5)!/n!(n-1)! is an integer.
+Coordination sequence T2 for Zeolite Code MEP.
+Odd pentagonal numbers.
+Numbers that are the sum of 2 nonzero squares in exactly 3 ways.
+Numbers that are the sum of 2 distinct nonzero squares in exactly 3 ways.
+T(2n+1,n+1), T given by A026769.
+Coordination sequence T1 for Zeolite Code CGS.
+Nonsquarefree n such that Pell equation x^2 - n y^2 = -1 is soluble.
+
+Conjectured dimension of a module associated with the free commutative Moufang loop with n generators.
+Numbers written in base of triangular numbers.
+The cubes: a(n) = n^3.
+Expansion of Product (1 - x^k)^8 in powers of x.
+Number of compositions of n into 5 ordered relatively prime parts.
+Number of primes < prime(n)^2.
+a(1)=0, a(2n) = a(n)+1, a(2n+1) = 10*a(n+1).
+Perfect powers: m^k where m > 0 and k >= 2.
+Numbers with an even number of digits.
+Powerful numbers, definition (1): if a prime p divides n then p^2 must also divide n (also called squareful, square full, square-full or 2-powerful numbers).
+
+Numbers k such that 3^k, 3^(k+1) and 3^(k+2) have the same number of digits.
+Primes multiplied by 4.
+Numbers k such that 15*2^k - 1 is prime.
+Numbers that are the sum of 5 positive 5th powers.
+Numbers that are the sum of at most 5 positive 5th powers.
+Number of unrooted triangulations of a disk with one internal node and n+3 nodes on the boundary.
+Second-order Eulerian numbers: a(n) = 2^n - 2*n.
+Numbers n such that sum of divisors of n is a square.
+Numbers k such that phi(x) = k has exactly 3 solutions.
+Coordination sequence T1 for Zeolite Code APD.
+
+
+
+a(n) is the number of partitions of n (the partition numbers).
+Numbers written in base of triangular numbers.
+a(1)=0, a(2n) = a(n)+1, a(2n+1) = 10*a(n+1).
+Primes in ternary.
+a(n) = 2 * Sum_{k=0..n-1} binomial(n-1, k)*binomial(n+k, k).
+Number of equivalence classes of base-3 necklaces of length n, where necklaces are considered equivalent under both rotations and permutations of the symbols.
+Maximal number of disjoint subsets {X,Y,Z} of {1, 2, ..., n}, each satisfying X + Y = Z.
+Losing initial positions in game: two players alternate in removing >= 1 stones; last player wins; first player may not remove all stones; each move <= 3 times previous move.
+Number of trees with n nodes and 2-colored internal (non-leaf) nodes.
+Primes written in base 5.
+
+
+
+Number of permutations of length n by rises.
+The coding-theoretic function A(n,4,4).
+Numbers that are the sum of 6 positive 5th powers.
+Roman numerals with 1 letter, in numerical order; then those with 2 letters, etc.
+Roman numerals with 1 letter, in alphabetical order; then those with 2 letters, etc.
+Correlations of length n.
+Numbers n such that 4*3^n + 1 is prime.
+Number of Twopins positions.
+Number of directed column-convex polyominoes with perimeter 2n+2.
+10-gonal (or decagonal) pyramidal numbers: a(n) = n*(n + 1)*(8*n - 5)/6.
+
+
+Numbers that are the sum of 7 positive 5th powers.
+Number of Hamiltonian paths in P_4 X P_n.
+Number of Hamiltonian paths in P_5 X P_n.
+Coefficients of modular function G_2(tau).
+Number of compositions (ordered partitions) of n into squares.
+Shifts left under XOR-convolution with itself.
+Coordination sequence T2 for Zeolite Code AET.  
+Coordination sequence T1 for Zeolite Code AFG.
+Coordination sequence T2 for Zeolite Code APD.  
+Coordination sequence T1 for Zeolite Code EAB.
+
+
+Numbers k such that 3^k, 3^(k+1) and 3^(k+2) have the same number of digits.
+Primes multiplied by 4.
+Numbers k such that 15*2^k - 1 is prime.
+Numbers that are the sum of 5 positive 5th powers.
+Numbers that are the sum of at most 5 positive 5th powers.
+Number of unrooted triangulations of a disk with one internal node and n+3 nodes on the boundary.
+Second-order Eulerian numbers: a(n) = 2^n - 2*n.
+Numbers n such that sum of divisors of n is a square.
+Numbers k such that phi(x) = k has exactly 3 solutions.
+Coordination sequence T1 for Zeolite Code APD.
+
+Number of monosubstituted alkanes C(n-1)H(2n-1)-X with n-1 carbon atoms that are stereoisomers.
+a(n) = solution to the postage stamp problem with 3 denominations and n stamps.
+Denominators of Bernoulli numbers B_{2n}.
+Coefficients of high-temperature series for specific heat of spin-1/2 Ising model on a cristobalite lattice.
+Coordination sequence T9 for Zeolite Code EUO.
+Coordination sequence T7 for Zeolite Code NES.
+Coordination sequence T5 for Zeolite Code NON.
+Coordination sequence for NiAs(2), As position.
+Coordination sequence for NiAs(2), Ni position.
+Powers of fourth root of 21 rounded down.
+
+MacMahon's generalized sum of divisors function.
+Numbers k such that k-th and (k+1)-st term of A038593 differ by 6.
+n is odd and sum of digits of n equals the numbers of divisors of n.
+McKay-Thompson series of class 40A for Monster.
+Sums of rows of triangle in A077389.
+Number of permutations satisfying -k<=p(i)-i<=r and p(i)-i not in I, i=1..n, with k=3, r=3, I={-1,0,1}.
+A077388 sorted and duplicates removed.
+Least positive multiples of index n that can result from the self-convolution of a monotonically increasing sequence (A087148).
+Numbers n such that nextprime(n^3)-prevprime(n^3) = 4.
+a(n) = K_3(n) = Sum_{k>=0} A090285(3,k)*2^k*binomial(n,k). a(n) = (4*n^3+30*n^2+56*n+15)/3.
