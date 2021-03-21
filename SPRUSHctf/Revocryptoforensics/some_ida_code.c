@@ -27,7 +27,6 @@ int  sub_4010E0(char* a1, char *Str, char* a3)
   unsigned char v5; // [esp+8h] [ebp-Ch]
   size_t v6; // [esp+Ch] [ebp-8h]
   unsigned char v7; // [esp+10h] [ebp-4h]
-printf("bye\n");
   v7 = 0;
   v5 = 0;
   v6 = 0;
@@ -54,7 +53,6 @@ int  sub_401030(char *Str, char *a2)
   unsigned char v4; // [esp+4h] [ebp-Ch]
   unsigned int i; // [esp+8h] [ebp-8h]
   unsigned int j; // [esp+Ch] [ebp-4h]
-  printf("Hello\n");
   v3 = strlen(Str);
   v4 = 0;
 
@@ -70,13 +68,11 @@ int  sub_401030(char *Str, char *a2)
 int  some_crypt(char *Str, char *a2, char* a3)
 {
   char v4[256]; // [esp+0h] [ebp-104h] BYREF
-  printf("dead\n");
     for ( int i = 0; i < 0x100; ++i ){
     *(char *)(i + v4) = i;
     
   }
   sub_401030(Str, v4);
-  printf("dead_1n_s1d3\n");
   sub_4010E0(v4, a2, a3);
   return 0;
 }
@@ -104,27 +100,17 @@ int main(){
 0x21, 0x2f, 0xca, 0x84, 0x30, 0xec, 0xfd, 0xad, 
 0x8e, 0x9b, 0xf1, 0x7b, 0xf6, 0xe9, 0xb0, 0x9b };
 
-  printf("life\n");
   block1 = (char *)calloc(1u, 0x100u);
-    printf("start\n");
- 
- printf("\nend\n");
   memcpy(block1, &peer1_0[0], 32);
-
-  printf("life\n");
   block2 = (char *)calloc(1u, 0x100u);
   memcpy(block2, &peer1_0[32], 32);
   block3 = (char *)calloc(1u, 0x100u);
   memcpy(block3, &peer1_0[64], 32);
   new_block1 = (char *)calloc(1u, 0x100u);
-  
   some_crypt(block1, block2, new_block1);
-  
-  printf("life\n");
   new_block2 = (char *)calloc(1u, 0x100u);
   some_crypt(block1, block3, new_block2);
   v5 = calloc(1u, 0x100u);
-  
   some_crypt(new_block1, new_block2, v5);
   for(int i=0; i<64; i++) printf("%p ", *(new_block1+i));
   printf("\n");
