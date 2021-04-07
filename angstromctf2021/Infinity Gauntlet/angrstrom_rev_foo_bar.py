@@ -52,8 +52,9 @@ while (1==1):
     count=0
     tme=int(time.time())
     strme=""
-    #r = process('/problems/2021/infinity_gauntlet/infinity_gauntlet')
-    r = process('/home/user1/Загрузки/infinity_gauntlet_patch')
+    r = process('/problems/2021/infinity_gauntlet/infinity_gauntlet')
+    #r = process('/home/user1/Загрузки/infinity_gauntlet_patch')
+    r=remote("shell.actf.co", 21700)
     print(r.recvline())
     while(1==1):
         count+=1
@@ -64,11 +65,11 @@ while (1==1):
         print(r.recvline())
         buf=r.recvline()
         print(buf)
-        if(count==1):
-            strme=buf
         buf=buf.replace(b'=', b',').replace(b'(', b',').replace(b')', b'').replace(b' ', b'').replace(b'\n', b'')
         buf=re.split(b',', buf)
         res=int(rev_in(buf))
+        if(count==1):
+            strme=str(res)
         print(str(res).split('.')[0])
         r.sendline(str(res).split('.')[0])
         if (count>0x31):
