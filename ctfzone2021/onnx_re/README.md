@@ -11,7 +11,7 @@ tags: writeup, rev, ai, ctfzone2021
 
 > [color=#1cefda]Так как никто до сих пор не купил у меня рекламы, я просто прорекламирую мой канал [@ch4nnel1](https://t.me/ch4nnel1) в райтапах от этого же канала.
 
-Original write-up: https://hackmd.io/CeWJhxjFRMuHI1uOzgkocw
+Original write-up: https://hackmd.io/@osogi/onnx_re
 
 
 ## Разбор
