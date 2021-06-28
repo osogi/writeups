@@ -7,7 +7,7 @@ tags: writeup, rev, ai, ctfzone2021
 
 
 
-![](https://github.com/osogi/writeups/tree/main/ctfzone2021/onnx_re/attachments/1.jpg)
+![](https://raw.githubusercontent.com/osogi/writeups/main/ctfzone2021/onnx_re/attachments/1.jpg)
 
 > [color=#1cefda]Так как никто до сих пор не купил у меня рекламы, я просто прорекламирую мой канал [@ch4nnel1](https://t.me/ch4nnel1) в райтапах от этого же канала.
 
@@ -15,11 +15,11 @@ Original write-up: https://hackmd.io/CeWJhxjFRMuHI1uOzgkocw
 
 
 ## Разбор
-![](https://github.com/osogi/writeups/tree/main/ctfzone2021/onnx_re/attachments/2.png)
+![](https://raw.githubusercontent.com/osogi/writeups/main/ctfzone2021/onnx_re/attachments/2.png)
 <p style="text-align: center;">Сам таск (https://ctf.bi.zone/challenges/7)</p>
 
 Скачиваем прикрепленный файл, это 7z архив со следующими файлами
-![](https://github.com/osogi/writeups/tree/main/ctfzone2021/onnx_re/attachments/3.png)
+![](https://raw.githubusercontent.com/osogi/writeups/main/ctfzone2021/onnx_re/attachments/3.png)
 
 Установив все необходимое с помощью команды `python3.7 -m pip install -r requirements.txt`, изучим питон код
 ```python=0
@@ -67,7 +67,7 @@ def run_model_test(model: ModelProto):
     print(ob)
 ```
 Чуть потыкавшись и поигравшись с результирующим массивом
-![](https://github.com/osogi/writeups/tree/main/ctfzone2021/onnx_re/attachments/4.png)
+![](https://raw.githubusercontent.com/osogi/writeups/main/ctfzone2021/onnx_re/attachments/4.png)
 
 Доработаем нашу функцию `run_model_test` так, чтобы мы могли нагляднее увидеть зависимоть выхлопа ии от предоставленных данных. Для этого посчитаем результат ии от неких 32 байт, после будем менять по 1 байту и сравнивать новый результат с изначальным.
 ```python=0
@@ -94,14 +94,14 @@ def run_model_test(model: ModelProto):
         print(str(c)+": "+str(buf))
 ```
 После запуска этого кода, уже можно понять что `data[i]` влияет на `out[i-2:i+1]`
-![](https://github.com/osogi/writeups/tree/main/ctfzone2021/onnx_re/attachments/5.png)
+![](https://raw.githubusercontent.com/osogi/writeups/main/ctfzone2021/onnx_re/attachments/5.png)
 
 Сделав еще один запуск, но в этот раз с "0" вместо "1" и "1" вместо "2" (1 и 10 строчка функции `run_model_test`), получим такой же результат как и от предыдущей версии скрипта => нейросетка просто делает `out[i]=data[i]*x+data[i+1]*y+data[i+2]*z+b`, где `x`, `y`, `z`, `b` - некие коэфиценты. `x`, `y` и `z` мы уже выясняли с помощью предыдущего скрипта. Осталось выяснить только `b`, сделаь это несложно, все что нужно это дать на вход `data=b"\x00"*32`. Сделав это, получим что все `b` равны 0.
 
 Все что осталось сделать это решить систему линейных уравнений, я это сделал [доработав скрипт](https://github.com/osogi/writeups/tree/main/ctfzone2021/onnx_re/solution/solution.py) с помощью z3.
 
-![](https://github.com/osogi/writeups/tree/main/ctfzone2021/onnx_re/attachments/6.png)
-
+![](https://raw.githubusercontent.com/osogi/writeups/main/ctfzone2021/onnx_re/attachments/6.png)
+Ну вот и флаг
 ## Решение 
 
 - Понять зависимость out'а нейронки от data поданной на вход (я не знаю как еще расписать этот шаг)
@@ -113,6 +113,6 @@ def run_model_test(model: ModelProto):
 ## Эпилог
 
 Так же в чате ctfzone при обсуждение этого таска всплывали такие ссылки https://github.com/onnx/onnx-mlir/ и https://netron.app/, говорят они как раз могут помочь при реверсе нейронок. Первую ссыль я особо не тыкал, но открыв сетку во второй я запутался, испугался и закрыл.
-![](https://github.com/osogi/writeups/tree/main/ctfzone2021/onnx_re/attachments/7.png)
+![](https://raw.githubusercontent.com/osogi/writeups/main/ctfzone2021/onnx_re/attachments/7.png)
 
 Так же я наверное буду переходить с https://telegra.ph на https://hackmd.io, так как в первом нельзя простым способом красиво вставить код, + markdown -> можно безпроблемотично переносить на другие сайты и тд.
