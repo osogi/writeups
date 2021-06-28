@@ -11,7 +11,7 @@ tags: writeup, rev, ctfzone2021, sql
 
 > [color=#1cefda]Самый секьюрный канал на бешаном востоке [@ch4nnel1](https://t.me/ch4nnel1)
 
-Original write-up: https://hackmd.io/UKS6HgoKTj-LNbw-ajGGVg
+Original write-up: https://hackmd.io/@osogi/Secure-Database
 
 ## Разбор
 ![](https://i.imgur.com/4sj6Tl8.png)
