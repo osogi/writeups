@@ -20,7 +20,7 @@ Original write-up: [https://hackmd.io/@osogi/Invalid-Machine](https://hackmd.io/
 
 <p style="text-align: center;">Сам таск (https://ctf.bi.zone/challenges/9)</p>
 
-Ну как обычно запустим бинарник
+Ну как обычно запустим [бинарник](https://ctf.bi.zone/files/invalid_machine.3f0e596d7cfe4822e25ca80c96cb8c30)
 
 ![](https://i.imgur.com/9yu4b1n.png)
 
