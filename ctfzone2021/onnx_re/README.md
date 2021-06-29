@@ -18,7 +18,7 @@ Original write-up: https://hackmd.io/@osogi/onnx_re
 ![](https://raw.githubusercontent.com/osogi/writeups/main/ctfzone2021/onnx_re/attachments/2.png)
 <p style="text-align: center;">Сам таск (https://ctf.bi.zone/challenges/7)</p>
 
-Скачиваем прикрепленный файл, это 7z архив со следующими файлами
+Скачиваем [прикрепленный файл](https://ctf.bi.zone/files/onnx_re.7z.bdd52942d33d333b098d2ed947abcd5f), это 7z архив со следующими файлами
 ![](https://raw.githubusercontent.com/osogi/writeups/main/ctfzone2021/onnx_re/attachments/3.png)
 
 Установив все необходимое с помощью команды `python3.7 -m pip install -r requirements.txt`, изучим питон код
